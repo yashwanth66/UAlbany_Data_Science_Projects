@@ -1,0 +1,27 @@
+# Heart Disease Prediction Using Machine Learning  
+
+## Overview  
+This project aims to predict cardiovascular disease using machine learning techniques. It leverages a dataset of 70,000 medical records, including features like age, cholesterol levels, glucose levels, and lifestyle factors. Various machine learning models were trained and evaluated to determine the most effective classifier for predicting heart disease.  
+
+## Dataset  
+The dataset consists of **60,752 cleaned entries** after preprocessing. It includes 13 features such as:  
+- **Age, Gender, Height, Weight**  
+- **Systolic & Diastolic Blood Pressure (AP_HI, AP_LO)**  
+- **Cholesterol & Glucose Levels**  
+- **Lifestyle Factors** (Smoking, Alcohol Consumption, Physical Activity)  
+- **Cardiovascular Disease (Target Variable: 0 - No, 1 - Yes)**  
+
+## Methodology  
+1. **Data Preprocessing:** Removed outliers, normalized numerical features using Standard Scaler, and performed feature engineering.  
+2. **Exploratory Data Analysis (EDA):** Visualized distributions, correlations, and statistical relationships among features.  
+3. **Feature Engineering:** Created new features such as **BMI (Body Mass Index)** and **MAP (Mean Arterial Pressure)** for better predictive performance.  
+4. **Model Training & Validation:**  
+   - **Logistic Regression** – Best accuracy (72.28%), simple and effective for binary classification.  
+   - **Random Forest** – Balanced performance with an ROC-AUC score of 0.753.  
+   - **Naïve Bayes** – Highest ROC-AUC score (0.774) but lower overall accuracy.  
+
+## Results  
+- **Correlation Matrix Analysis:** Identified key features like **age, cholesterol, and glucose levels** as strong predictors of cardiovascular disease.  
+- **Model Performance:** Logistic Regression outperformed other models in terms of accuracy, while Random Forest provided robust feature importance insights.  
+- **Statistical Validation:** Chi-Square test confirmed significant relationships between cardiovascular disease and medical features.  
+
